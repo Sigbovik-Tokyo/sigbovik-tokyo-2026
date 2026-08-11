@@ -24,10 +24,10 @@ def render(locale: str, template_name: str, *contexts: Any) -> str:
     # Load webpage images
     webpage_images: list = [
         # about us images
-        ("tsn_logo", url_for("static", filename="/assets/images/organizer_logos/TSN_logo_blue.png")),
-        ("tuj_cs_society_logo", url_for("static", filename="assets/images/organizer_logos/TUJ_CS_SOCIETY_LOGO.JPG")),
-        ("gdgoc_iput_logo", url_for("static", filename="/assets/images/organizer_logos/GDG-on-Campus-IPUT-Icon-Dark.png")),
-        ("gdgoc_waseda_logo", url_for("static", filename="/assets/images/organizer_logos/Copy of __ GDG + PA + Chapter Lockup - Centered - Template.png")),
+        ("tsn_logo", "../../static/assets/images/organizer_logos/TSN_logo_blue.png"),
+        ("tuj_cs_society_logo", "../../static/assets/images/organizer_logos/TUJ_CS_SOCIETY_LOGO.JPG"),
+        ("gdgoc_iput_logo", "../../static/assets/images/organizer_logos/GDG-on-Campus-IPUT-Icon-Dark.png"),
+        ("gdgoc_waseda_logo", "../../static/assets/images/organizer_logos/Copy of __ GDG + PA + Chapter Lockup - Centered - Template.png"),
     ]
 
     try:
