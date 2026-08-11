@@ -1,4 +1,4 @@
-lang: "ja"
 index:
+  lang: "ja"
   title: "ようこそ"
   body: "これは文章です。"

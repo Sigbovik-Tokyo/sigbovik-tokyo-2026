@@ -35,6 +35,7 @@ def render_index(locale: str) -> str:
     return render(
         locale,
         "index",
+        {"lang": "index.lang"},
         {"title": "index.title"},
         {"body": "index.body"},
     )
