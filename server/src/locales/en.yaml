@@ -1,4 +1,7 @@
-lang: "en"
 index:
+  lang: "en"
   title: "Welcome"
   body: "This is a body text"
+nav:
+  home: "Home"
+  about: "About"
