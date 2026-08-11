@@ -7,7 +7,11 @@ from anint import translations, Translator
 translations.load("./locales/")
 
 
-app: Flask = Flask(__name__)
+app: Flask = Flask(
+    __name__,
+    static_folder="../../static",
+    static_url_path="/static"
+)
 translator: Translator = Translator(
     locales=["en", "ja"],
     locale="en",
