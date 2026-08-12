@@ -1,12 +1,10 @@
+common:
+  lang: "en"
+  lang_alternates: ["ja"]
+  title: "Sigbovik Tokyo 2026"
+  description: "Sigbovik Tokyo 2026 is an official partner of CMU's yearly Sigbovik conference featuring academic papers and talks featuring joke topics that are sometimes heavily researched. It will be held in Tokyo this year for the very first time in December!"
+  home: "Home"
+  about: "About Sigbovik Tokyo"
 index:
-  lang: "en"
-  title: "Welcome"
-  body: "This is a body text"
-  home: "Home"
-  about: "About"
+  
 about:
-  lang: "en"
-  title: "Welcome"
-  body: "This is a body text"
-  home: "Home"
-  about: "About"
