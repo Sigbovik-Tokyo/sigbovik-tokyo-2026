@@ -2,6 +2,11 @@ index:
   lang: "en"
   title: "Welcome"
   body: "This is a body text"
-nav:
+  home: "Home"
+  about: "About"
+about:
+  lang: "en"
+  title: "Welcome"
+  body: "This is a body text"
   home: "Home"
   about: "About"
