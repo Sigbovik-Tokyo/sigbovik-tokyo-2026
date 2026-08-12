@@ -3,6 +3,8 @@ from typing import Callable, Any
 from sigtemplate.templite import Templite
 from anint import translations, Translator
 
+from load_translations import load_translations
+
 
 translations.load("./locales/")
 
@@ -48,22 +50,22 @@ def render(locale: str, template_name: str, *contexts: Any) -> str:
 
 
 def render_index(locale: str) -> str:
+    translations_file_path: str = "./locales/" + locale + ".yaml"
+    index_translations: list[dict[str, Any]] = load_translations(translations_file_path, "index")
     return render(
         locale,
         "index",
-        {"lang": "index.lang"},
-        {"title": "index.title"},
-        {"body": "index.body"},
+        *index_translations
     )
 
 
 def render_about(locale: str) -> str:
+    translations_file_path: str = "./locales/" + locale + ".yaml"
+    about_translations: list[dict[str, Any]] = load_translations(translations_file_path, "about")
     return render(
         locale,
         "about",
-        {"lang": "index.lang"},
-        {"title": "index.title"},
-        {"body": "index.body"},
+        *about_translations
     )
 
 
