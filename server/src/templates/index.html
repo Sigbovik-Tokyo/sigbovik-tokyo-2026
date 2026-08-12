@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang={{lang}}>
+<html lang="{{ common.lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigbovik Tokyo 2026</title>
+    <title>{{ common.title }}</title>
     <link rel="stylesheet" type="text/css" href="/static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
     <meta 
         name="description" 
-        content="Sigbovik Tokyo 2026 is an official partner of CMU's yearly Sigbovik conference
-            featuring academic papers and talks featuring joke topics that are sometimes heavily 
-            researched. It will be held in Tokyo this year for the very first time in December!"
+        content="{{ common.description }}"
     />
 </head>
 <body>
     <header>
-        <h1>SIGボヸック東京 2026</h1>
+        <h1>{{ common.title }}</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+        <ul id="nav-links">
+            <li><a href="/{{ common.lang }}">{{ common.home }}</a></li>
+            <li><a href="/{{ common.lang }}/about">{{ common.about }}</a></li>
+        </ul>
+        <ul id="nav-actions">
+            {% for lang_alternate in common.lang_alternates %}
+                <li><a href="/{{ lang_alternate }}">{{ lang_alternate }}</a></li>
+            {% endfor %}
         </ul>
     </nav>
     <main>

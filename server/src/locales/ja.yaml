@@ -1,4 +1,10 @@
-index:
+common:
   lang: "ja"
-  title: "ようこそ"
-  body: "これは文章です。"
+  lang_alternates: ["en"]
+  title: "SIGボヸック東京 2026"
+  description: "TODO: 日本語に翻訳すること"
+  home: "ホーム"
+  about: "SIGボヸック東京について"
+index:
+  
+about:

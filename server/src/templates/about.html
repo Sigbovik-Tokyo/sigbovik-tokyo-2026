@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html lang={{lang}}>
+<html lang="{{ common.lang }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigbovik Tokyo 2026 - About Us</title>
+    <title>{{ common.about }}</title>
     <link rel="stylesheet" type="text/css" href="/static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
-    <meta 
-        name="description" 
-        content="Sigbovik Tokyo 2026 is an official partner of CMU's yearly Sigbovik conference
-            featuring academic papers and talks featuring joke topics that are sometimes heavily 
-            researched. It will be held in Tokyo this year for the very first time in December!"
-    />
+    <meta name="description" content="{{ common.description }}">
 </head>
 <body>
     <header>
-        <h1>Sigbovik Tokyo 2026</h1>
+        <h1>{{ common.about }}</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+        <ul id="nav-links">
+            <li><a href="/{{ common.lang }}">{{ common.home }}</a></li>
+            <li><a href="/{{ common.lang }}/about">{{ common.about }}</a></li>
+        </ul>
+        <ul id="nav-actions">
+            {% for lang_alternate in common.lang_alternates %}
+                <li><a href="/{{ lang_alternate }}/about">{{ lang_alternate }}</a></li>
+            {% endfor %}
         </ul>
     </nav>
     <main>
@@ -47,7 +47,7 @@
             <ul>
                 <li>
                     <img 
-                        src="{{tsn_logo}}"
+                        src="/static/assets/images/organizer_logos/TSN_logo_blue.png"
                         alt="Tokyo Student Network's Logo"
                         width="50"
                     >
@@ -62,7 +62,7 @@
                 </li>
                 <li>
                     <img 
-                        src="{{tuj_cs_society_logo}}"
+                        src="/static/assets/images/organizer_logos/TUJ_CS_SOCIETY_LOGO.JPG"
                         alt="Temple University Japan Computer Science Society's Logo"
                         width="50"
                     >
@@ -77,7 +77,7 @@
                 </li>
                 <li>
                     <img 
-                        src="{{gdgoc_iput_logo}}"
+                        src="/static/assets/images/organizer_logos/GDG-on-Campus-IPUT-Icon-Dark.png"
                         alt="Google Developers on Campus IPUT's Logo"
                         width="50"
                     >
@@ -92,7 +92,7 @@
                 </li>
                 <li>
                     <img 
-                        src="{{gdgoc_waseda_logo}}"
+                        src="/static/assets/images/organizer_logos/Copy of __ GDG + PA + Chapter Lockup - Centered - Template.png"
                         alt="Google Developers on Campus Waseda University's Logo"
                         width="50"
                     >
@@ -102,7 +102,7 @@
                     bringing together a diverse bilingual network of students to collaborate, 
                     innovate, and build impactful projects.
 
-                    <a href="https://www.gdsc-waseda.com/">
+                    <a href="https://gdg.community.dev/gdg-on-campus-waseda-university-tokyo-japan/">
                         GDGoC Waseda's Homepage
                     </a>
                 </li>
