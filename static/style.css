@@ -1,3 +1,68 @@
 body {
-    font-family: "Mochiy Pop One", "Comic Sans MS";
+    background: linear-gradient(160deg, #ff0000, #ff8c00, #ffd500, #23c552, #1e78ff, #8a2be2);
+    background-attachment: fixed;
+}
+a {
+    color: #000; 
+}
+.wrapper {
+    max-width: 40em; margin: 0 auto;
+    padding: 3em 1.5em;
+    min-height: 100vh;
+    line-height: 1.6;
+    color: #000;
+}
+.en {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.ja {
+    font-family: "Mochiy Pop One", "Comic Sans MS", sans-serif;
+}
+.nav-actions {
+    padding: 0;
+}
+.nav-actions li {
+    text-align: right;
+    list-style: none;
+}
+.eyebrow {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin: 0 0 -0.2em;
+}
+.banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 0.6em;
+}
+.banner text {
+    font-family: "Mochiy Pop One", "Comic Sans MS", sans-serif;
+    font-weight: 700;
+    fill: #000;
+}
+
+.schedule-title {
+    text-align: center;
+    margin: 0.2em 0 0.5em;
+}
+.schedule {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+    margin: 0 auto 1.5em;
+}
+.schedule td {
+    background: rgba(255, 255, 255, 0.75);
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 8px 12px;
+    vertical-align: top;
+}
+.schedule .time {
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
 }

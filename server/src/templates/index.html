@@ -8,73 +8,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
-    <meta 
-        name="description" 
-        content="{{ common.description }}"
-    />
+    <meta name="description" content="{{ common.description }}">
 </head>
-<body>
-    <header>
-        <h1>{{ common.title }}</h1>
-    </header>
-    <nav>
-        <ul id="nav-links">
-            <li><a href="/{{ common.lang }}">{{ common.home }}</a></li>
-            <li><a href="/{{ common.lang }}/about">{{ common.about }}</a></li>
-        </ul>
-        <ul id="nav-actions">
-            {% for lang_alternate in common.lang_alternates %}
-                <li><a href="/{{ lang_alternate }}">{{ lang_alternate }}</a></li>
-            {% endfor %}
-        </ul>
-    </nav>
-    <main>
-        <div id="description">
-            <h1>What is Sigbovik Tokyo?!?</h1>
-            <p>
-                Sigbovik Tokyo 2026 is an official partner of CMU's yearly Sigbovik conference 
-                featuring academic papers and talks featuring joke topics that are sometimes heavily 
-                researched. It will be held in Tokyo this year for the very first time in December!
-            </p>
-        </div>
-        <div id="luma-links-container">
-            <h1>Attend Sigbovik Tokyo!!!</h1>
-            <div id="luma-brief">
-                <a href="#">Click here to attend!</a>
-                <ul>
-                    <li>Datetime: YYYY-MM-DDTHH:mm:ss</li>
-                    <li>Venue: Somewhere in Tokyo Metropolis...</li>
-                    <li>Perks: Knowledge!!! And free ducks &lt;3</li>
-                </ul>
-            </div>
-            <div id="luma-qr">
-                <img src=""
-                    alt="QR code for the Luma landing page of Sigbovik Tokyo">
-            </div>
-        </div>
-        <div id="announcements">
-            <h1>Announcements</h1>
-            <ul>
-                <li>Nothing... for now mwahahaha!</li>
+<body class="{{ common.lang }}">
+    <div class="wrapper">
+        <nav class="nav">
+            <ul class="nav-actions">
+                {% for lang_alternate in common.lang_alternates %}
+                    <li>→ <a href="/{{ lang_alternate }}">{{ lang_alternate }}</a></li>
+                {% endfor %}
             </ul>
-            <!-- TODO: Here be a fancy for loop tag or something. -->
-        </div>
-        <div id="contact">
-            <h1>
-                Ask 
-                <ruby>Harry<rt>ハリー</rt></ruby> 
-                <ruby>Q.<rt>キュー</rt></ruby> 
-                <ruby>Bovik<rt>ボヸック</rt></ruby>!?!
-            </h1>
-            <p>
-                For inquiries: 
-                <a href="mailto:sigbovik-tokyo@theducks.xyz">
-                    sigbovik-tokyo@theducks.xyz</a>
-            </p>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; Sigbovik Tokyo 2026</p>
-    </footer>
+            <header>
+                <p class="eyebrow {{ common.title_alternate_lang }}">{{ common.title_alternate }}</p>
+                <svg class="banner" viewBox="0 0 1000 150" role="img" aria-label="{{ common.title }}" preserveAspectRatio="xMidYMid meet">
+                    <text x="500" y="112" font-size="110" text-anchor="middle" textLength="960" lengthAdjust="spacingAndGlyphs">{{ common.title }}</text>
+                </svg>
+            </header>
+            <!-- <ul id="nav-links">
+                <li><a href="/{{ common.lang }}">{{ common.home }}</a></li>
+                <li><a href="/{{ common.lang }}/about">{{ common.about }}</a></li>
+            </ul> -->
+        </nav>
+        <main>
+            <h2>{{ index.first-paragraph-title }}</h2>
+            <p>{{ index.first-paragraph-body }}</p>
+    
+            <h2>{{ index.second-paragraph-title }}</h2>
+            <p>{{ index.second-paragraph-body }}</p>
+    
+            <h2>{{ index.third-paragraph-title }}</h2>
+            <p>{{ index.third-paragraph-body }}</p>
+    
+            <h2>{{ index.fourth-paragraph-title }}</h2>
+            <p>{{ index.fourth-paragraph-body-a }}</p>
+            <!-- sticker image goes here -->
+            <p>{{ index.fourth-paragraph-body-b }}</p>
+
+            <h2 class="schedule-title">{{ index.fifth-paragraph-title }}</h2>
+            <table class="schedule">
+            <tr>
+                <td class="time" colspan="3">... {{ index.fifth-paragraph-body }} ...</td>
+            </tr>
+            </table>
+            
+            <h2>{{ index.sixth-paragraph-title }}</h2>
+            <p>{{ index.sixth-paragraph-body }}</p>
+    
+            <h2>{{ index.seventh-paragraph-title }}</h2>
+            <ul class="sponsors-list">
+                {% for sponsor in index.seventh-paragraph-body %}
+                    <li>{{ sponsor }}</li>
+                {% endfor %}
+            </ul>
+        </main>
+        <footer>
+            <p>&copy; Sigbovik Tokyo 2026</p>
+        </footer>
+    </div>
 </body>
 </html>
