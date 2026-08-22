@@ -1,10 +1,25 @@
 common:
   lang: "en"
   lang_alternates: ["ja"]
-  title: "Sigbovik Tokyo 2026"
-  description: "Sigbovik Tokyo 2026 is an official partner of CMU's yearly Sigbovik conference featuring academic papers and talks featuring joke topics that are sometimes heavily researched. It will be held in Tokyo this year for the very first time in December!"
+  title: "SIGBOVIK Tokyo 2026"
+  title_alternate: "SIGぼーゐ゙っく東京"
+  title_alternate_lang: "ja"
+  description: "SIGBOVIK Tokyo 2026 is an official partner of CMU's yearly SIGBOVIK conference featuring academic papers and talks featuring joke topics that are sometimes heavily researched. It will be held in Tokyo this year for the very first time in December!"
   home: "Home"
-  about: "About Sigbovik Tokyo"
+  about: "About SIGBOVIK Tokyo"
 index:
-  
-about:
+  first-paragraph-title: "What in the celery is “SIGBOVIK Tokyo” ?"
+  first-paragraph-body: "SIGBOVIK is an annual special interest group Computer Science conference at Carnegie Mellon University where researchers, professors, students, and industry professionals take fooling around with computer science seriously by presenting and writing research findings like “the turing completeness of microsoft powerpoint” or “the computational complexity of cheating on your partner” or more found <a href='https://SIGBOVIK.org//?utm_source=chatgpt.com'>https://SIGBOVIK.org/</a>. We are making this happen in Tokyo because the more fooling around in computer science the better."
+  second-paragraph-title: "When and where will SIGBOVIK Tokyo take place?"
+  second-paragraph-body: "Late November / Early December. Venue TBD."
+  third-paragraph-title: "I want to give a talk / submit a paper at SIGBOVIK Tokyo, how do I do that ?"
+  third-paragraph-body: "Contact us at <a href='mailto:duck@theducks.xyz'>duck@theducks.xyz</a>! We're pretty friendly people. We already have people giving talks like: “rederiving ”, “why programming with knee highs makes you a level 10 c programmer”, “the computationally most optimal way to kiss” etc. Even if you're not sure about what to present / if you want to present feel free to contact us because we'll give you a duck and a chocolate."
+  fourth-paragraph-title: "Why should I go to SIGBOVIK Tokyo??"
+  fourth-paragraph-body-a: "We'll serve pizza and give out stickers like this:"
+  fourth-paragraph-body-b: "You could also ask our one and only sponsor for advice."
+  fifth-paragraph-title: "Conference Schedule"
+  fifth-paragraph-body: "to be announced"
+  sixth-paragraph-title: "CONTACT"
+  sixth-paragraph-body: "<a href='mailto:duck@theducks.xyz'>duck@theducks.xyz</a> <br>A rubber duck is at the desk to answer you sometimes"
+  seventh-paragraph-title: "SPONSORS"
+  seventh-paragraph-body: ["HINA SEKINE"]

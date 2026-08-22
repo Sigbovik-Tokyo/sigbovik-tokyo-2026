@@ -1,10 +1,25 @@
 common:
   lang: "ja"
   lang_alternates: ["en"]
-  title: "SIGボヸック東京 2026"
+  title: "SIGぼーゐ゙っく東京 2026"
+  title_alternate: "SIGBOVIK Tokyo"
+  title_alternate_lang: "en"
   description: "TODO: 日本語に翻訳すること"
   home: "ホーム"
-  about: "SIGボヸック東京について"
+  about: "SIGぼーゐ゙っく東京について"
 index:
-  
-about:
+  first-paragraph-title: "「SIGぼーゐ゙っく東京」って、何？"
+  first-paragraph-body: "SIGBOVIKは、<a href='https://sigbovik.org/?utm_source=chatgpt.com'>カーネギーメロン大学で毎年開催されているコンピュータサイエンスのちょっと変わった学会</a>です。研究者、教授、学生、企業の人たちが、「コンピュータサイエンスでふざけることを真面目にやる」ために集まり、「Microsoft PowerPointのチューリング完全性」や「浮気の計算複雑性」みたいな研究を、ちゃんと発表したり論文として書いたりしています。それを東京でもやろうというものです。ふざける人は多ければ多いほどいいので。"
+  second-paragraph-title: "SIGぼーゐ゙っく東京 はいつ、どこで開催されますか？"
+  second-paragraph-body: "11月下旬〜12月上旬を予定しています。<br>会場は現在調整中です。</p>"
+  third-paragraph-title: "SIGぼーゐ゙っく東京 で発表したい／論文を出したいんですが、どうすればいいですか？"
+  third-paragraph-body: "<a href='mailto:duck@theducks.xyz'>duck@theducks.xyz</a>までご連絡ください！わりとフレンドリーな人たちです。すでに、</p><ul><li>「〇〇を再導出する」</li><li>「ニーハイを履いてプログラミングするとC言語力がレベル10になる理由」</li><li>「最も計算量的に最適なキスの方法」</li></ul><p>などの発表を予定しています。<br>何を発表すればいいかわからない、そもそも自分が発表していいのかわからない、という場合でも、気軽に連絡してください。相談に乗ります。<br>あと、アヒルとチョコレートもあげます。"
+  fourth-paragraph-title: "なんでSIGぼーゐ゙っく東京に行くべきなんですか？"
+  fourth-paragraph-body-a: "ピザを出します。そして、こんな感じのステッカーを配ります。"
+  fourth-paragraph-body-b: "現在点でお一人のスポンサーに人生相談をすることもできます。"
+  fifth-paragraph-title: "コンファレンススケジュール"
+  fifth-paragraph-body: "未定"
+  sixth-paragraph-title: "問い合わせ"
+  sixth-paragraph-body: "<a href='mailto:duck@theducks.xyz'>duck@theducks.xyz</a><br>たまに、受付にいるアヒルが答えてくれます。"
+  seventh-paragraph-title: "スポンサー"
+  seventh-paragraph-body: ["関根　ひな"]
